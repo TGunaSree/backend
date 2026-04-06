@@ -1,14 +1,10 @@
 flask
 flask-socketio
 eventlet
-torch
-torchvision
-torchaudio
 sqlalchemy
 flask-sqlalchemy
 flask-jwt-extended
 numpy
-weasyprint
 reportlab
 pydantic
 python-dotenv
