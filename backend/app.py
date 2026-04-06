@@ -1,6 +1,6 @@
 
 import eventlet
-eventlet.monley_patch()
+eventlet.monkey_patch()
 import os
 from flask import Flask
 from flask_jwt_extended import JWTManager
