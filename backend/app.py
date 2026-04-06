@@ -16,7 +16,7 @@ limiter = Limiter(
 )
 
 def create_app():
-    app = Flask(__name__)
+    app = Flask(app.py)
     CORS(app, resources={r"/api/*": {"origins": "*"}})
     
     # Configuration
