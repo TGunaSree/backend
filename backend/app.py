@@ -29,7 +29,7 @@ def create_app():
     db.init_app(app)
     jwt.init_app(app)
     limiter.init_app(app)
-    socketio.init_app(app, async_mode='threadings', cors_allowed_origins="*")
+    socketio.init_app(app, async_mode='threading', cors_allowed_origins="*")
     
     # Register SocketIO namespaces
     from sockets.handlers import TrainingNamespace, ArenaNamespace
