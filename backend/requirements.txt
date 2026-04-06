@@ -13,3 +13,5 @@ reportlab
 pydantic
 python-dotenv
 flask-limiter
+gunicorn
+flask-cors
