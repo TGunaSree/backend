@@ -42,7 +42,12 @@ def create_app():
     app.register_blueprint(agents_bp, url_prefix='/api/agents')
     app.register_blueprint(stats_bp, url_prefix='/api/stats')
     app.register_blueprint(report_bp, url_prefix='/api/reports')
-    
+    @app.route("/")
+    def home():
+        return {
+            "message": "Backend is running 🚀",
+            "status": "success"
+        }
     # Create database tables
     with app.app_context():
         db.create_all()
