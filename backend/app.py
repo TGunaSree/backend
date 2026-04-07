@@ -33,9 +33,7 @@ def create_app():
     socketio.init_app(app, async_mode='threading', cors_allowed_origins="*")
     
     # Register SocketIO namespaces
-    from sockets.handlers import TrainingNamespace, ArenaNamespace
-    socketio.on_namespace(TrainingNamespace('/training'))
-    socketio.on_namespace(ArenaNamespace('/arena'))
+
     
     # Register blueprints
     from api.auth import auth_bp
